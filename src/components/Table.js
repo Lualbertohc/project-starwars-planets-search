@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import context from '../context/context';
 
 function Table() {
-  const { planetsState } = useContext(context);
+  const { planetsData } = useContext(context);
 
   return (
     <div>
@@ -26,21 +26,21 @@ function Table() {
           </tr>
         </thead>
         <tbody>
-          { planetsState.map((info) => (
-            <tr key={ info.name }>
-              <td>{ info.name }</td>
-              <td>{ info.rotation_period }</td>
-              <td>{ info.orbital_period }</td>
-              <td>{ info.diameter }</td>
-              <td>{ info.climate }</td>
-              <td>{ info.gravity }</td>
-              <td>{ info.terrain }</td>
-              <td>{ info.surface_water }</td>
-              <td>{ info.population }</td>
-              <td>{ info.films }</td>
-              <td>{ info.created }</td>
-              <td>{ info.edited }</td>
-              <td>{ info.url }</td>
+          { planetsData.map((planet) => (
+            <tr key={ planet.name }>
+              <td>{ planet.name }</td>
+              <td>{ planet.rotation_period }</td>
+              <td>{ planet.orbital_period }</td>
+              <td>{ planet.diameter }</td>
+              <td>{ planet.climate }</td>
+              <td>{ planet.gravity }</td>
+              <td>{ planet.terrain }</td>
+              <td>{ planet.surface_water }</td>
+              <td>{ planet.population }</td>
+              <td>{ planet.films }</td>
+              <td>{ planet.created }</td>
+              <td>{ planet.edited }</td>
+              <td>{ planet.url }</td>
             </tr>
           ))}
         </tbody>

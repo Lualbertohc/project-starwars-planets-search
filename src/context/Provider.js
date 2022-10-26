@@ -4,7 +4,9 @@ import context from './context';
 import fetchAPI from '../services/fetchApi';
 
 function Provider({ children }) {
-  const [planetsState, setPlanetsState] = useState([]);
+  const [planetsData, setPlanetsData] = useState([]);
+  const [filter, setFilter] = useState([]);
+  const [imput, setImput] = useState('');
 
   useEffect(() => {
     const fetchFunction = async () => {
@@ -14,16 +16,23 @@ function Provider({ children }) {
         delete element.residents;
         return element;
       });
-      setPlanetsState(planetList);
+      setPlanetsData(planetList);
+      setFilter(planetList);
     };
     fetchFunction();
   }, []);
 
   const contextValue = useMemo(
     () => ({
-      planetsState,
+      planetsData,
+      imput,
+      setImput,
+      setPlanetsData,
+      filter,
     }),
-    [planetsState,
+    [planetsData,
+      imput,
+      filter,
     ],
   );
 
