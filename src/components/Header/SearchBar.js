@@ -1,16 +1,13 @@
-import { useContext } from 'react';
-import context from '../context/context';
+import { useContext, useState } from 'react';
+import context from '../../context/context';
 
-function Header() {
-  const { imputState,
-    setImput,
-    planetsData,
-    filter,
-    setPlanetsData,
-  } = useContext(context);
+function SearchBar() {
+  const [searchBarImput, setSearchBarImput] = useState('');
+
+  const { planetsData, setPlanetsData, filter } = useContext(context);
 
   const handleChange = ({ target: { value } }) => {
-    setImput(value);
+    setSearchBarImput(value);
 
     if (value.length > 0) {
       const search = planetsData
@@ -30,7 +27,7 @@ function Header() {
             data-testid="name-filter"
             id="input"
             type="text"
-            value={ imputState }
+            value={ searchBarImput }
             onChange={ handleChange }
           />
         </label>
@@ -39,4 +36,4 @@ function Header() {
   );
 }
 
-export default Header;
+export default SearchBar;
