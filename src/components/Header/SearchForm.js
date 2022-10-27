@@ -1,4 +1,4 @@
-import { useState, useContext } from 'react';
+import { useContext, useState } from 'react';
 import context from '../../context/context';
 
 function SearchForm() {
@@ -8,7 +8,12 @@ function SearchForm() {
     number: 0,
   });
 
-  const { planetsData, setPlanetsData, filter } = useContext(context);
+  const {
+    planetsData,
+    setPlanetsData,
+    filter,
+    setNumericalFilter,
+  } = useContext(context);
 
   const handleChange = ({ target: { name, value } }) => {
     setFormImput((oldState) => ({ ...oldState, [name]: value }));
@@ -39,6 +44,8 @@ function SearchForm() {
     default:
       setPlanetsData(filter);
     }
+
+    setNumericalFilter((oldState) => [...oldState, formImput]);
   };
 
   return (

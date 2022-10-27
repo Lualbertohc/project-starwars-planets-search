@@ -6,6 +6,7 @@ import fetchAPI from '../services/fetchApi';
 function Provider({ children }) {
   const [planetsData, setPlanetsData] = useState([]);
   const [filter, setFilter] = useState([]);
+  const [numericalFilter, setNumericalFilter] = useState([]);
 
   useEffect(() => {
     const fetchFunction = async () => {
@@ -24,11 +25,14 @@ function Provider({ children }) {
   const contextValue = useMemo(
     () => ({
       setPlanetsData,
+      setNumericalFilter,
       planetsData,
       filter,
+      numericalFilter,
     }),
     [planetsData,
       filter,
+      numericalFilter,
     ],
   );
 
