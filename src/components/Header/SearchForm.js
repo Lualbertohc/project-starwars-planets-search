@@ -8,6 +8,19 @@ function SearchForm() {
     number: 0,
   });
 
+  // CRIAR ESTADOS SEPARADAMENTE
+  // const [column, setColumn] = useState({ column: 'population' });
+  // const [column, setColumn] = useState({ column: 'population' });
+  // const [column, setColumn] = useState({ column: 'population' });
+
+  const [optionsForm, setOptionsForm] = useState([
+    'population',
+    'orbital_period',
+    'diameter',
+    'rotation_period',
+    'surface_water',
+  ]);
+
   const {
     planetsData,
     setPlanetsData,
@@ -46,6 +59,13 @@ function SearchForm() {
     }
 
     setNumericalFilter((oldState) => [...oldState, formImput]);
+
+    const filterOptionsForm = optionsForm.filter((item) => item !== formImput.column);
+
+    setOptionsForm(filterOptionsForm);
+    setFormImput({
+      column: filterOptionsForm[0],
+    });
   };
 
   return (
@@ -57,11 +77,10 @@ function SearchForm() {
           value={ formImput.column }
           onChange={ handleChange }
         >
-          <option>population</option>
-          <option>orbital_period</option>
-          <option>diameter</option>
-          <option>rotation_period</option>
-          <option>surface_water</option>
+          {
+            optionsForm
+              .map((item, i) => <option key={ i }>{ item }</option>)
+          }
         </select>
         <select
           data-testid="comparison-filter"
