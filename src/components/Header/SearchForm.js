@@ -10,8 +10,8 @@ function SearchForm() {
 
   // CRIAR ESTADOS SEPARADAMENTE
   // const [column, setColumn] = useState({ column: 'population' });
-  // const [column, setColumn] = useState({ column: 'population' });
-  // const [column, setColumn] = useState({ column: 'population' });
+  // const [comparison, setComparison] = useState({ comparison: 'maior que' });
+  // const [number, setNumber] = useState({ number: 0' });
 
   const [optionsForm, setOptionsForm] = useState([
     'population',
@@ -79,7 +79,7 @@ function SearchForm() {
         >
           {
             optionsForm
-              .map((item, i) => <option key={ i }>{ item }</option>)
+              .map((item, i) => <option value={ item } key={ i }>{ item }</option>)
           }
         </select>
         <select
@@ -88,9 +88,9 @@ function SearchForm() {
           value={ formImput.comparison }
           onChange={ handleChange }
         >
-          <option>maior que</option>
-          <option>menor que</option>
-          <option>igual a</option>
+          <option value="maior que">maior que</option>
+          <option value="menor que">menor que</option>
+          <option value="igual a">igual a</option>
         </select>
       </form>
       <label htmlFor="value-filter">
