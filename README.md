@@ -20,7 +20,7 @@ O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para busca
 
 <p>imagem ilustrativa da Trybe</p>
 
-<h1>Tecnologias usadas neste projeto</h1>
+🛠 <h1>Tecnologias usadas neste projeto</h1>
 
 <p>
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" height=40/>
