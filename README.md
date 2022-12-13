@@ -18,7 +18,7 @@ O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para busca
 <img src="https://github.com/tryber/sd-024-b-project-starwars-planets-search/raw/master/req-3.gif" />
 </div>
 
-<p>imagem ilustrativa da Trybe</p>
+<p> :warning: imagem ilustrativa :warning: </p>
 
 <h1>🛠 Tecnologias usadas neste projeto</h1>
 
