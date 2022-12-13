@@ -29,7 +29,7 @@ O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para busca
 <img src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB" height=40/>
 </p>
 
-<p>A API consumida está <a href="[https://www.linkedin.com/in/luisalbertohc/](https://swapi.dev/api/planets)" target="_blank">Luis Alberto</a>. O fetch foi feito com base na URL https://swapi.dev/api/planets</p>
+<p>A API consumida está <a href="https://swapi.dev/api/planets" target="_blank">neste link</a>. O fetch foi feito com base na URL https://swapi.dev/api/planets</p>
 
 <h1>Acesso ao projeto</h1>
 
