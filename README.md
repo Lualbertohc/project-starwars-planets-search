@@ -18,7 +18,7 @@ O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para busca
 <img src="https://github.com/tryber/sd-024-b-project-starwars-planets-search/raw/master/req-3.gif" />
 </div>
 
-<p> :warning: imagem ilustrativa :warning: </p>
+<p align="center"> :warning: imagem ilustrativa :warning: </p>
 
 <h1>🛠 Tecnologias usadas neste projeto</h1>
 
@@ -31,7 +31,7 @@ O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para busca
 
 <p>A API consumida está <a href="https://swapi.dev/api/planets" target="_blank">neste link</a>. O fetch foi feito com base na URL https://swapi.dev/api/planets</p>
 
-<h1>Acesso ao projeto</h1>
+<h1> :open_file_folder: Acesso ao projeto</h1>
 
 <p>
 Para ter acesso ao projeto primeiro você deve obter o código fonte
