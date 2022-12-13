@@ -8,7 +8,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-<h1> Introdução </h1>
+<h1> :rocket: Introdução </h1>
 
 <p>
 O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para buscar as princípais características de um planeta do universo de Guerra nas estrelas. A aplicação permitirá filtrar informações como população, clima e até mesmo o diâmetro do planeta! 
