@@ -38,6 +38,14 @@ Para ter acesso ao projeto primeiro você deve obter o código fonte
 </p>
 
 ```sh
-git clone 
+git clone git@github.com:Lualbertohc/project-starwars-planets-search.git
+```
+
+<p>
+Instale as dependências de desenvolvimento. Verifique o mecanismo package.json para verificar as versões de nó testadas e compatíveis.
+</p>
+
+```sh
+npm install
 ```
 
