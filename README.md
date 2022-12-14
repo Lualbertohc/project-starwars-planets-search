@@ -11,7 +11,7 @@
 <h1> :rocket: Introdução </h1>
 
 <p>
-O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para buscar as princípais características de um planeta do universo de Guerra nas estrelas. A aplicação permitirá filtrar informações como população, clima e até mesmo o diâmetro do planeta! 
+O projeto em desenvolvimento "Star Wars Planets" é um filtro simples para buscar as princípais características de um planeta do universo de Guerra nas Estrelas. A aplicação permitirá filtrar informações como população, clima e até mesmo o diâmetro dos corpos celestes! 
 </p>
 
 <div>
